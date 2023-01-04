@@ -10,8 +10,8 @@ namespace MinimalAPI.Models
   {
     public Guid Id { get; set; }
     public Guid CategoryId { get; set; }
-    public string Title { get; set; }
-    public string Description { get; set; }
+    public required string Title { get; set; }
+    public required string Description { get; set; }
     public Priority Priority { get; set; }
     public DateTime CreatedDate { get; set; }
     public virtual Category Category { get; set; }
